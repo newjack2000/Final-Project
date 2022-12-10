@@ -1,0 +1,4 @@
+.restaurant__header {
+    margin-top: 2rem;
+    margin-left: clamp(4rem, 10vw, 48rem);
+}
