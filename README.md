@@ -2,6 +2,18 @@
 
 ###### Lucas Barrett, Ronald Baker, Justin Overdorf
 
+### Tech Stack
+
+- #### Front end
+  - HTML/CSS
+  - React/JavaScript
+  - Vite Dev Server
+
+- #### Back end
+  - Supabase
+  - Netlify 
+
+
 ## Getting Started
 
 ### Prerequisites
