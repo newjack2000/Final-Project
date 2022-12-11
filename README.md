@@ -11,6 +11,8 @@ Before you begin, make sure you have the following installed on your system:
 - [nvm](https://github.com/coreybutler/nvm-windows) (for Windows)
 - [nvm](https://github.com/nvm-sh/nvm) (for Mac/Linux)
 
+Please follow some tutorials if you don't have this installed to get it working correctly. On windows it is funky to setup because of environemnt variables and $PATH and such. Mac/Linux nvm is so much easier to work with.
+
 ### Installation
 
 1. Clone the repository:
