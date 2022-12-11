@@ -1,6 +1,6 @@
 # Final-Project
 
-####### Lucas Barrett, Ronald Baker, Justin Overdorf
+###### Lucas Barrett, Ronald Baker, Justin Overdorf
 
 ## Getting Started
 
