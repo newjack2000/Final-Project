@@ -34,3 +34,4 @@ function Login() {
 }
 
 export default Login;
+export { supabase };

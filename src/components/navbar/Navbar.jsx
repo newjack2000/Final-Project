@@ -29,69 +29,35 @@ const Navbar = () => {
         navigate("/welcome"); 
     }
   return (
-    <div className="sidebar">
+    <nav className="sidebar">
+        <div className='container'>
+            <div className="logo">
+                <img src="src/assets/Ivytech.png" alt="..."></img>
+            </div>
 
-        <div className="logo">
-            <img src="src/assets/Ivytech.png" alt="..."></img>
+            { Object.keys(user).length !== 0 ?
+                <>
+                    <button onClick = {() => signOutUser() }>Logout</button>
+                </>
+            :
+                <>
+                    <button onClick = {() => { navigate('/login') }}>Login</button>
+                </>
+            }
+            <div className='Nav-Item-Container'>
+                <ul className='Nav-Items'>
+                    <li className="nav-item">
+                        <i className="bx bxs-dashboard"><MdSpaceDashboard /></i>
+                        <span>Home</span>
+                    </li>
+                    <li className="nav-item">
+                        <i className="bx bxs-bar-chart-alt-2"><MdSpaceDashboard /></i>
+                        <span>Order</span>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        { Object.keys(user).length !== 0 ?
-            <>
-                <button onClick = {() => signOutUser() }>Logout</button>
-            </>
-        :
-            <>
-                <button onClick = {() => { navigate('/login') }}>Login</button>
-            </>
-        }
-
-        <nav>
-
-            <div className="nav-title">
-                Management
-            </div>
-
-            <ul>
-                <li className="nav-item active">
-                    <i className="bx bxs-dashboard"><MdSpaceDashboard /></i>
-                    <span>Dashboard</span>
-                </li>
-                <li className="nav-item">
-                    <i className="bx bxs-bar-chart-alt-2"><MdSpaceDashboard /></i>
-                    <span>Analytics</span>
-                </li>
-                <li className="nav-item">
-                    <i className="bx bxs-wallet"><MdSpaceDashboard /></i>
-                    <span>Wallet</span>
-                </li>
-                <li className="nav-item">
-                    <i className="bx bxs-bell"><MdSpaceDashboard /></i>
-                    <span>Notifications</span>
-                </li>
-                <li className="nav-item">
-                    <i className="bx bxs-cog"><MdSpaceDashboard /></i>
-                    <span>Settings</span>
-                </li>
-            </ul>
-
-            <div className="nav-title">
-                Supports
-            </div>
-
-            <ul>
-                <li className="nav-item">
-                    <i className="bx bxs-help-circle"></i>
-                    <span>Get Help</span>
-                </li>
-                <li className="nav-item">
-                    <i className="bx bxs-message-dots"></i>
-                    <span>Send Feedback</span>
-                </li>
-            </ul>
-
-        </nav>
-
-    </div>
+    </nav>
   )
 }
 
