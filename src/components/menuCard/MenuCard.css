@@ -1,4 +1,42 @@
-.Menu-Card-Container {
-    display: grid;
+.Menu-Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, .65);
+    box-shadow: 0 8px 32px rgb(2, 4, 24);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, .09);
+    margin: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
     
+}
+
+.Menu-Card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 32px rgb(2, 4, 24);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, .09);
+    margin: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.Menu-Card-Image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.Menu-Card-Item {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 1rem;
 }

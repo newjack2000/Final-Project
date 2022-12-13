@@ -1,3 +1,5 @@
+import './MenuCard.css'
+
 const MenuCard = ({ menu }) => {
     return (
         <div className = 'Menu-Card'>
